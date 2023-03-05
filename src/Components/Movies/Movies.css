@@ -1,0 +1,14 @@
+.Movies{
+    width: 100%;
+    height: auto;
+}
+
+.Mmovies{
+    margin-top: 120px;
+}
+.Mmovies .not_found{
+    margin-top: 150px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}

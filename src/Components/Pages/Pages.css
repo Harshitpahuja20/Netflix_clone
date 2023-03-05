@@ -1,0 +1,318 @@
+/* <------------------------     Header Page Css     ---------------------------> */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+  background-color: transparent;
+  align-items: center;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header .logo img {
+  width: 180px;
+}
+
+.header .btn button {
+  width: 100%;
+  font-size: 18px;
+  padding: 8px 10px;
+  background: rgba(255, 29, 29, 0.986);
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.header .btn{
+  margin-left: auto;
+  margin-right: 100px;
+}
+@media screen and (max-width: 800px) {
+ .header .btn{
+  margin-right: 60px;
+ }
+}
+@media screen and (max-width: 550px) {
+  .header .logo img {
+    width: 140px;
+  }
+  .header .btn button {
+    padding: 8px;
+    font-size: 16px;
+  }
+  .header .btn{
+margin-right: 30px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header .btn{
+   margin-right: 0px;
+  }
+  .header .btn button{
+   padding: 6px;
+  }
+  .header .logo img {
+    width: 122px;
+}
+ }
+
+
+/* <------------------------     Login Page Css     ---------------------------> */
+
+.front-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shade {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.background_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(90%);
+  z-index: -2;
+  object-fit: cover;
+}
+
+.background_image img {
+  width: 100vw;
+  height: 100vh;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 50px;
+  border-radius: 10px;
+}
+.login-form h1 {
+  color: white;
+  font-size: 50px;
+}
+.login-form input {
+  font-size: 16px;
+  width: 100%;
+  padding: 7px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.button button {
+  width: 100%;
+  font-size: 18px;
+  padding: 6px 12px;
+  background: rgba(255, 29, 29, 0.986);
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-form p {
+  color: white;
+  font-size: 16px;
+}
+.login-form p span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .login-form input {
+    width: 100%;
+    padding: 4px;
+  }
+  .login-form {
+    padding: 30px;
+  }
+  .login-form h1 {
+    font-size: 40px;
+  }
+  .login-form p {
+    font-size: 14px;
+  }
+
+}
+@media screen and (max-width: 300px) {
+  .login-form input {
+    width: 100%;
+    padding: 4px;
+  }
+  .login-form {
+    padding: 20px;
+  }
+  .login-form h1 {
+    font-size: 30px;
+  }
+  .login-form p {
+    font-size: 12px;
+  }
+
+}
+
+/* <------------------------     sign up Page Css     ---------------------------> */
+.sign_up {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.sign_up .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 150px;
+}
+.sign_up h1 {
+  text-align: center;
+  color: white;
+  font-size: 60px;
+}
+
+.sign_up .p1 {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+.sign_up .p2 {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.signup_form {
+  width: 100%;
+  display: flex;
+}
+
+.SignUp-input {
+  padding: 6px 12px;
+  width: 20vw;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.btnn {
+  font-size: 18px;
+  padding: 6px 12px;
+  background: rgba(255, 29, 29, 0.986);
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 0px 5px 5px 0;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+}
+
+.border {
+  border-radius: 5px;
+}
+
+.gap {
+  gap: 1rem;
+}
+
+.signup-btn {
+  text-align: center;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 1150px) {
+  .background_image{
+    overflow: hidden;
+  }
+  .background_image img{
+    width: auto !important;
+  }
+  .sign_up h1 {
+    font-size: 50px;
+  }
+  .sign_up .p1 {
+    font-size: 20px;
+  }
+  .sign_up .p2 {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .sign_up h1 {
+    font-size: 40px;
+    padding: 0px 20px;
+  }
+  .sign_up .p1 {
+    font-size: 20px;
+    padding: 0px 20px;
+  }
+  .sign_up .p2 {
+    font-size: 15px;
+    padding: 0px 20px;
+  }
+  .SignUp-input {
+    padding: 6px 12px;
+    width: 30vw;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    transition: 0.3s ease-in-out;
+  }
+}
+@media screen and (max-width: 600px) {
+  .sign_up h1 {
+    font-size: 35px;
+    padding: 0px 20px;
+  }
+  .inputs {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .SignUp-input {
+    padding: 6px 12px;
+    width: 50vw;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    transition: 0.3s ease-in-out;
+    border-radius: 2px;
+  }
+  .sign_up .text {
+    gap: 2rem;
+    margin-top: 80px;
+  }
+  .sign_up {
+    gap: 3rem;
+  }
+}

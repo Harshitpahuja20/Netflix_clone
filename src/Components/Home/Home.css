@@ -1,0 +1,108 @@
+.home {
+  width: 100%;
+  height: 100vh;
+}
+
+.home .bg-image {
+  width: 100%;
+  height: inherit;
+  filter: brightness(40%);
+}
+
+.home-info {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.name-image {
+  width: 50vw;
+}
+
+.buttons {
+  display: flex;
+  gap: 2rem;
+  margin-left: 10%;
+}
+
+.play-btn {
+  gap: 0.5rem;
+  font-size: 25px;
+  padding: 5px 15px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+}
+.info-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 25px;
+  padding: 5px 15px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  background-color: rgba(128, 128, 128, 0.753);
+  color: white;
+}
+
+.buttons svg {
+  font-size: 25px;
+}
+
+button a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+@media screen and (max-width : 800px) {
+  .home{
+    height: auto;
+  }
+  .home .bg-image {
+    width: 100%;
+    height: 75vh;
+  }
+.home-info {
+    top: 25%;
+}
+.buttons{
+  margin-left: 5px;
+}
+.buttons button{
+  padding: 5px 10px;
+  font-size: 20px;
+}
+}
+@media screen and (max-width : 600px) {
+  .home .bg-image {
+    height: 60vh;
+  }
+}
+@media screen and (max-width : 450px) {
+  .home .bg-image {
+    height: 60vh;
+  }
+  .name-image {
+    width: 70vw;
+  }
+  .buttons button{
+    padding: 5px;
+    font-size: 16px;
+  }
+  .buttons button svg{
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,147 @@
+/* <------------------    MovieSlider CSS      --------------------> */
+.Movieslider {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 15px;
+  overflow: hidden;
+  height: 38vh;
+  /* justify-content: space-between; */
+}
+
+.Movieslider a {
+  text-decoration: none;
+  color: white;
+}
+.Movieslider .heading h1 {
+  color: white;
+  margin-left: 100px;
+}
+
+.handleMovies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 80px;
+}
+
+.handleMovies button {
+  background-color: transparent;
+  padding: 60px 10px;
+  z-index: 10;
+  height: 100%;
+  border: none;
+  outline: none;
+  margin: 0 5px;
+}
+
+.handleMovies button svg {
+  font-size: 50px;
+  background-color: rgb(116, 116, 116);
+  border-radius: 30px;
+}
+
+.Movies_row {
+  display: flex;
+  max-width: 100%;
+  padding: 10px 0px;
+  gap: 1rem;
+  margin: 0 5px;
+  height: 250px;
+}
+
+.Movies_row::-webkit-scrollbar {
+  display: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  .handleMovies button {
+    display: none;
+  }
+  .handleMovies {
+    overflow: auto;
+    padding: 20px;
+  }
+  .Movieslider {
+    height: auto;
+    gap: 0;
+  }
+  .Movies_row {
+    padding: 30px 0;
+    height: auto;
+  }
+  .Movieslider .heading h1 {
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .movie-image,
+  .movie-video {
+    max-width: 170px;
+    max-height: 130px;
+  }
+  .handleMovies{
+    padding: 6px 20px;
+  }
+}
+
+/* <------------------    MovieCard CSS      --------------------> */
+.MovieCard {
+  max-width: 200px;
+  max-height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.movie-images {
+  display: flex;
+  justify-content: center;
+}
+.movie-image,
+.movie-video {
+  max-width: 200px !important;
+  max-height: 150px !important;
+}
+.details {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  word-wrap: break-word;
+  padding: 11px;
+  min-height: 160px;
+}
+.details ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  gap: 2rem;
+}
+.details ul li {
+  list-style: disc;
+  font-size: 16px;
+  justify-content: flex-start;
+}
+.icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icons svg {
+  font-size: 22px;
+  cursor: pointer;
+}
+.inc-height {
+  transform: scaleX(1.1);
+  background-color: rgb(32, 32, 32) !important;
+  z-index: 20;
+}
+
+.icon-color {
+  color: rgb(248, 28, 28);
+}
+
+/* <------------------    Slider CSS      --------------------> */
+.Slider {
+  margin-top: 60px;
+}
